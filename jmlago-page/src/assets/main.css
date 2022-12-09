@@ -1,0 +1,51 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+.purple1 {
+  text-decoration: none;
+  color: #b2347e;
+  transition: 0.4s;
+}
+
+.orange1 {
+  text-decoration: none;
+  color: #F4873C;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a.orange1:hover {
+    background-color: #482b8b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    background-color: #190E1F;
+  }
+  @font-face {
+    font-family: "broken-console";
+    src: url("./src/assets/fonts/broken-console/Broken\ Console\ Regular.ttf");
+  }
+  @font-face {
+    font-family: "broken-console-bold";
+    src: url("./src/assets/fonts/broken-console/Broken\ Console\ Bold.ttf");
+  }
+  @font-face {
+    font-family: "broken-console-bold-shadow";
+    src: url("./src/assets/fonts/broken-console/Broken\ Console\ Bold\ Shadow.ttf");
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    background-color: #190E1F;
+  }
+}
